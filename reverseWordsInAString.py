@@ -32,7 +32,15 @@ def reverseWords(s):
     # .split splits string into list of strings seperated by space no matter how many spaces, it will split 
     # .join joins the list of string with " "
 
+
+
+
+    # alternative solution
+    reversed_string = s.strip().split()
+    reversed_string.reverse()
+    reversed_string = " ".join(reversed_string)
+    
+
     return reversed_string
 
 
-print(reverseWords("a good   example"))
